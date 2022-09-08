@@ -89,7 +89,7 @@ The test succeeded, but as you can see in the image above, we provided our **Sec
 
 However, I found a better way not to only view the access token, but also parse it, and view it's attributes and claims, using **jwt.ms**.
 
-Go to your **Azure AD B2C** account, and then to your **App Registrations**. Pick your app, **MsalAuthInMaui<YOUR-SUFFIX>**, and go to **Authentication**. Then under **Mobile and desktop applications/Redirect URIs** add the following URI: **https://jwt.ms**.
+Go to your **Azure AD B2C** account, and then to your **App Registrations**. Pick your app, **MsalAuthInMaui`<YOUR-SUFFIX>`**, and go to **Authentication**. Then under **Mobile and desktop applications/Redirect URIs** add the following URI: **https://jwt.ms**.
 
 ![image-20220907100435947](md-images/image-20220907100435947.png)  
 
@@ -201,7 +201,7 @@ Log in to the **Google Developers Console** in the **Google Cloud Platform** fro
 
 Click on the project list down arrow to open the **Select a project** modal screen.
 
-![Project List](images/72c85f652e3a8d12f7480fa753fa0de3b1a84d1aada092756b83c9972768d7f5.png)  
+![Project List](md-images/72c85f652e3a8d12f7480fa753fa0de3b1a84d1aada092756b83c9972768d7f5.png)  
 
 Click on **NEW PROJECT**.
 
@@ -231,7 +231,7 @@ Then select **OAuth client ID**.
 
 ![OAuth client ID](md-images/7a47bc1cb00f18b12171190c53b5424020bbdb8870fe495e415ded6fa89ba80d.png)  
 
-Select **Web application** for the **Application Type**. Give it a name, and add **https://msalauthinmaui<YOURS-SUFFIX>.b2clogin.com** for the **Authorized JavaScript origins** URIs, and **https://msalauthinmaui<YOUR-SUFFIX>.b2clogin.com/msalauthinmaui<YOUR-SUFFIX>.onmicrosoft.com/oauth2/authresp** for the **Authorized redirect URIs**.
+Select **Web application** for the **Application Type**. Give it a name, and add **https://msalauthinmaui`<YOUR-SUFFIX>`.b2clogin.com** for the **Authorized JavaScript origins** URIs, and **https://msalauthinmaui`<YOUR-SUFFI>`.b2clogin.com/msalauthinmaui`<YOUR-SUFFIX>`.onmicrosoft.com/oauth2/authresp** for the **Authorized redirect URIs**.
 
 Then click on **CREATE**.
 
@@ -285,7 +285,7 @@ Go back to your **App Registrations**, and select your app, and then **Authentic
 
 ![image-20220907115227474](md-images/image-20220907115227474.png)
 
->:point_up: Make sure you replace your \<YOUR-SUFFIX> with your own value.
+>:point_up: Make sure you replace your `<YOUR-SUFFIX>` with your own value.
 
 Finally, open up *appsettings.json* in the `MsalAuthInMaui` project, and replace **b2c_1_twitter_susi** with **b2c_1_social_susi**, under the **PolicySignUpSignInSocial**, and **AuthoritySocial** settings.
 
